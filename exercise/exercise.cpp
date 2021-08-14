@@ -6,7 +6,7 @@
 #include <string>
 using namespace std;
 
-string replace(string str,char userS)
+string replace(string str, char userS)
 {
 	string final = "";
 	for (int i = 0; i <= str.length(); i++)
@@ -18,11 +18,9 @@ string replace(string str,char userS)
 	}
 	return final;
 }
-
-
 int main()
 {
-
-	cout << replace("THis is 1",'1');
-
+	string Mstr = "Hello World";
+	char Mcar = 'd';
+	cout << replace(Mstr, Mcar);
 }
