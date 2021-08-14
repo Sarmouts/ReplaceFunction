@@ -2,14 +2,27 @@
 //
 
 #include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
+
+string replace(string str,char userS)
+{
+	string final = "";
+	for (int i = 0; i <= str.length(); i++)
+	{
+		if (str[i] != userS)
+		{
+			final += str[i];
+		}
+	}
+	return final;
+}
+
+
 int main()
 {
-	char a, b;
-	for (a = 'a'; a <= 'z'; a++)
-	{
-		cout << a << endl;
-	}
-	cout << a;
+
+	cout << replace("THis is 1",'1');
 
 }
